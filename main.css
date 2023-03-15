@@ -1,52 +1,57 @@
 :root {
     --main-color: #4B4E6D;
-    --sec-color: #92D8A9;
-    --contr-color: #F3F3F3;
+    --secondary-color: #92D8A9;
+    --contrast-color: #F3F3F3;
     --light-color: #BECEC5;
     --dark-color: #222222;
 }
 
 body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 1vw 1vw 0 1vw;
+    background-color: var(--secondary-color);
+   
 }
 
 header {
     background-color: var(--main-color);
     border-radius: 2px;
+    width: 97vw;
+    padding-bottom:1vh;
 }
 
-header h1 {
-    color: var(--contr-color);
+h1 {
+    color: var(--contrast-color);
     text-align: center;
     padding: 15px 0;
     margin: 0;
 }
 
 hr {
-    margin: 15px 30px 15px 30px;
+    margin: 15px 30px;
+    width: 100vh;
 }
 
 main {
     display: flex;
-    height: 100vh;
+    height: 70vh;
 }
 
 article {
-    background-color: var(--main-color);
-    width: 69vw;
-    pad: 2vw;
+    background: var(--main-color);
+
+    padding: 2vw;
 }
 
-article section {
+article section{
     margin-bottom: 3vh;
 }
 
 article h2 {
-    color: var(--contr-color);
+    color: var(--contrast-color);
 }
 
 article p {
@@ -54,21 +59,92 @@ article p {
     text-align: justify;
 }
 
-aside {
+aside{
     background-color: aliceblue;
     width: 31vw;
 }
 
-form {
+form{
     display: flex;
     flex-direction: column;
     padding: 1vw;
+
 }
 
 #email {
-    height: 5vh;
+    height: 1vh;
     padding: 1vw;
-    margin-bottom: 2.5vw;
-    border: 1px var(--main-color) solid;
+    margin-bottom: 2.5vh;
+    border: 1px solid #4B4E6D;
+    color: var(--dark-color);
+    border-radius: 2px;
+}   
+
+button {
+    padding: 2vh;
+    margin: 3vh 0;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 2px;
+    font-size: 1em;
+    color: var(--contrast-color);
+    }
+
+button:disabled {
+    color: gray;
+    background-color: gray;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+}
+
+nav a {
+    background-color: var(--main-color);
+    color: var(--contrast-color);
+    width: calc(90vw/4);
+    text-align: center;
+    line-height: 8vh;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--contrast-color);
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    left: 50%;
+}
+
+#checbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--contrast-color);
+    background-color: var(--dark-color);
+    height: 5vh;
+}
+
+#radio_group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #4B4E6D;
+    color: var(--contrast-color);
+    height: 5vh;
+    
+}
+
+h5 {
+    margin-left: 2vw;
+}
