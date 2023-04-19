@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>UFO Anomalies</title>
+    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="js.js"></script>
 </head>
 
 <body>
@@ -57,9 +59,9 @@
                 <input type="email" name="email" id="email" placeholder="Wprowadź adres email" required pattern="[a-zA-Z0-9.+_]+@gmail+\.com">
 
                 <div id="radio_group">
-                    <label><input type="radio" name="gender" id="mezczyzna"> Mężczyzna</label>
-                    <label><input type="radio" name="gender" id="kobieta"> Kobieta</label>
-                    <label><input type="radio" name="gender" id="inne" checked> Inne</label>
+                    <label><input type="radio" name="gender" id="mezczyzna" value="man"> Mężczyzna</label>
+                    <label><input type="radio" name="gender" id="kobieta" value="women"> Kobieta</label>
+                    <label><input type="radio" name="gender" id="inne" value="other" checked> Inne</label>
                 </div>
                 
                 <div id="checbox">
